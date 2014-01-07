@@ -24,7 +24,7 @@
     {
       "type": "paragraph",
       "id": "bdd8146ac72f11f5",
-      "text": "See [https://github.com/WardCunningham/Smallest-Federated-Wiki/tree/master/client/plugins/code GitHub] for plugin source."
+      "text": "See [https://github.com/fedwiki/wiki-plugin-code GitHub] for plugin source."
     },
     {
       "type": "paragraph",
@@ -289,6 +289,16 @@
         "text": "Formatting is by prettify.js available from [http://code.google.com/p/google-code-prettify/ Google Code]."
       },
       "date": 1351657553977
+    },
+    {
+      "type": "edit",
+      "id": "bdd8146ac72f11f5",
+      "item": {
+        "type": "paragraph",
+        "id": "bdd8146ac72f11f5",
+        "text": "See [https://github.com/fedwiki/wiki-plugin-code GitHub] for plugin source."
+      },
+      "date": 1389106807836
     }
   ]
 }
