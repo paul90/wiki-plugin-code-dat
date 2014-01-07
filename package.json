@@ -1,8 +1,8 @@
 {
-	"name":	"wiki-plugin-code",
-	"version":	"0.1.0",
-	"description": "Federated Wiki - Code Plug-in",
-	"keywords":	[
+  "name": "wiki-plugin-code",
+  "version": "0.1.1",
+  "description": "Federated Wiki - Code Plug-in",
+  "keywords": [
     "wiki",
     "federated wiki",
     "plugin"
