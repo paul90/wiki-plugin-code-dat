@@ -7,7 +7,7 @@
       "text": "This plugin formats and colors computer source code. "
     },
     {
-      "type": "paragraph",
+      "type": "html",
       "id": "c647c377034dce23",
       "text": "For example, many data handling plugins use <b>value()</b> to extract a numerical value from a string or object."
     },
@@ -17,7 +17,7 @@
       "text": "value = (obj) ->\n  return NaN unless obj?\n  switch obj.constructor\n    when Number then obj\n    when String then +obj\n    when Array then value(obj[0])\n    when Object then value(obj.value)\n    when Function then obj()\n    else NaN"
     },
     {
-      "type": "paragraph",
+      "type": "html",
       "id": "7b2c4920a95d0a13",
       "text": "Choose <b>code</b> in the Factory plugin menu to create a code item. See [[About Factory Plugin]]."
     },
@@ -299,6 +299,27 @@
         "text": "See [https://github.com/fedwiki/wiki-plugin-code GitHub] for plugin source."
       },
       "date": 1389106807836
+    },
+    {
+      "type": "edit",
+      "id": "c647c377034dce23",
+      "item": {
+        "type": "html",
+        "id": "c647c377034dce23",
+        "text": "For example, many data handling plugins use <b>value()</b> to extract a numerical value from a string or object."
+      },
+      "date": 1418314541200
+    },
+    {
+      "type": "edit",
+      "id": "7b2c4920a95d0a13",
+      "item": {
+        "type": "html",
+        "id": "7b2c4920a95d0a13",
+        "text": "Choose <b>code</b> in the Factory plugin menu to create a code item. See [[About Factory Plugin]]."
+      },
+      "date": 1418314556056
     }
-  ]
+  ],
+  "plugin": "code"
 }
