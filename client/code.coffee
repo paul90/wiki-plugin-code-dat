@@ -1,3 +1,10 @@
+###
+ * Federated Wiki : Code Plugin
+ *
+ * Licensed under the MIT license.
+ * https://github.com/fedwiki/wiki-plugin-code/blob/master/LICENSE.txt
+###
+
 escape = (str) ->
 	String(str)
 		.replace(/&/g, '&amp;')
@@ -16,4 +23,3 @@ class window.plugins.code
     load -> div.append "<pre class='prettyprint'>#{prettyPrintOne(escape(item.text))}</pre>"
   @bind: (div, item) ->
     load -> div.dblclick -> wiki.textEditor div, item
-
