@@ -6,18 +6,21 @@
 ###
 
 escape = (str) ->
-	String(str)
-		.replace(/&/g, '&amp;')
-		.replace(/"/g, '&quot;')
-		.replace(/'/g, '&#39;')
-		.replace(/</g, '&lt;')
-		.replace(/>/g, '&gt;')
+  String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
 
 class window.plugins.code
   load = (callback) ->
-    wiki.getScript '/plugins/code/prettify.js', callback
-    if (!$("link[href='/plugins/code/prettify.css']").length)
-    	$('<link href="/plugins/code/prettify.css" rel="stylesheet" type="text/css">').appendTo("head")
+    pluginOrigin = new URL(wiki.pluginRoutes["code"])
+    scriptURL = pluginOrigin + '/client/prettify.js'
+    cssURL = pluginOrigin + '/client/prettify.css'
+    wiki.getScript scriptURL, callback
+    if !$("link[href='#{cssURL}']").length
+      $("<link href='#{cssURL}' rel='stylesheet' type='text/css'>").appendTo("head")
 
   @emit: (div, item) ->
     load -> div.append "<pre class='prettyprint'>#{prettyPrintOne(escape(item.text))}</pre>"
