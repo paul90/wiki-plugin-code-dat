@@ -17,7 +17,7 @@ class window.plugins.code
   load = (callback) ->
     wiki.getScript '/plugins/code/prettify.js', callback
     if (!$("link[href='/plugins/code/prettify.css']").length)
-    	$('<link href="/plugins/code/prettify.css" rel="stylesheet" type="text/css">').appendTo("head")
+      $('<link href="/plugins/code/prettify.css" rel="stylesheet" type="text/css">').appendTo("head")
 
   @emit: (div, item) ->
     load -> div.append "<pre class='prettyprint'>#{prettyPrintOne(escape(item.text))}</pre>"
